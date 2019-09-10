@@ -11,7 +11,7 @@ public class Age{
 
         int yourAgeInYears= yourFinalAge;
 
-        System.out.println("Insert how many months since last birthday");
+        System.out.println("Insert how many months since last birthmonth");
         
         String inAgeMonths = yourAge.nextLine();
         Integer yourFinalAgeInMonths = Integer.parseInt(inAgeMonths);
@@ -27,7 +27,11 @@ public class Age{
 
         int yourAgeInSeconds = (yourAgeInYears*31536000)+(yourAgeInDays*86400)+(yourAgeInMonths*2678400);
 
-        System.out.println("your age in seconds is"+ yourAgeInSeconds);
+        double billion = 2.5E9;
+        double percentLifespan = (yourAgeInSeconds/billion)*100;      
+        System.out.println("your age in seconds is "+ yourAgeInSeconds);
+        System.out.println("----------------");
+        System.out.println("the percentage of the lifespan you have lived is " + percentLifespan+"%");
 
 
     }
