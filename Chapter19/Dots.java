@@ -29,7 +29,5 @@ public class Dots{
         }
         System.out.print(secondWord);
 
-
-
     }   
 }
