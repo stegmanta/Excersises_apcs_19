@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Sequential{
 
     public static void main (String []args){
+        
         boolean doneYet = false;
 
         Scanner user = new Scanner(System.in);
