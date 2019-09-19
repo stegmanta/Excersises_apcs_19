@@ -11,9 +11,10 @@ public class Harmonic{
         System.out.println(nValue);
         while(nValue>0.0){
             sum = 1.0/nValue;
-            nValue = nValue - 1;
-            totalSum =  sum+sum;        
+            System.out.println(sum);
+            totalSum = totalSum + sum;
+            nValue--;      
         }
-        System.out.println("Sum is: " + sum);
+        System.out.println("Sum is: " + totalSum);
     }
 }
