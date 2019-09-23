@@ -13,7 +13,7 @@ public class Dna{
         String c = "c";
         String g = "g";
         String match = "initialize";
-           tNumb = 0;
+        int tNumb = 0;
         int aNumb = 0;
         int cNumb = 0;
         int gNumb = 0;
