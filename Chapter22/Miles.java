@@ -8,15 +8,13 @@ public class Miles{
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Starting Initial miles:");
-        Integer sIM = Integer.parseInt(scan.nextLine());
-
-        while(sIM>0){
+        while(p){
 
         System.out.println("Initial miles:");
         Integer iM = Integer.parseInt(scan.nextLine());
 
-            if(iM>0){
+        if(iM>0){
+
         System.out.println("Final miles:");
         Integer fM = Integer.parseInt(scan.nextLine());
 
@@ -30,6 +28,7 @@ public class Miles{
         System.out.println("-----------------");
 
         }else{
+            p = false;
             System.out.println("bye");
         }
     }
