@@ -5,11 +5,14 @@ public class Odd{
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Insert n");
-        int oddSum = 0;
-        for(int n = scan.nextInt();n>0;){
-            oddSum= oddSum+n;
-            System.out.println(oddSum);
+        int n = scan.nextInt();
+        int totalOddSum=0;
+        double nS = Math.pow(n,n);
+        for(int oddNumb = 1 ; oddNumb<=n ; oddNumb+=2){
+            totalOddSum+=oddNumb;
+            //System.out.println(oddNumb); check counting
         }
+        System.out.println("The sum is " + totalOddSum);
+        System.out.println("N^2 is " + nS);
     }
 }
-// to make this add the int in the for statement as 1 then make it while 1<=n 1=1+2;
