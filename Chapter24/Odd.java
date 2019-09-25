@@ -10,7 +10,7 @@ public class Odd{
         double nS = Math.pow(n,n);
         for(int oddNumb = 1 ; oddNumb<=n ; oddNumb+=2){
             totalOddSum+=oddNumb;
-            //System.out.println(oddNumb); check counting
+            // System.out.println(oddNumb); //check counting
         }
         System.out.println("The sum is " + totalOddSum);
         System.out.println("N^2 is " + nS);
