@@ -4,15 +4,14 @@ public class TriAndSquare{
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Insert max number");
-        int n = scan.nextInt();
+        int pattern = 1;
+        int max = scan.nextInt();
+        int add = 2;
 
-        int totalOddNumb = 1;
-        int totalOddSum = 1;
-
-         for(int oddNumb = 1 ; oddNumb<=n ; oddNumb = oddNumb+totalOddNumb){
-            totalOddNumb = oddNumb +3;
-            totalOddSum =totalOddNumb+oddNumb;
-            System.out.println(totalOddSum);
+        while(pattern <= max){
+            pattern = pattern + add;
+            System.out.println(pattern);
+            add++;
         }
     }
 }
