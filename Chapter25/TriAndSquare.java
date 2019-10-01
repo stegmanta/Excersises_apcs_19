@@ -4,14 +4,21 @@ public class TriAndSquare{
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Insert max number");
+
         int pattern = 1;
         int max = scan.nextInt();
         int add = 2;
 
-        while(pattern <= max){
+        int squarePattern = 1;
+        int squareAdd = 3;
+
+        while(pattern <= max || squarePattern <= max) {
+            System.out.println( pattern + " " + squarePattern);
             pattern = pattern + add;
-            System.out.println(pattern);
+            squarePattern = squarePattern + squareAdd;
             add++;
+            squareAdd = squareAdd +2;
         }
+        
     }
 }
