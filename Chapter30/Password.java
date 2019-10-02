@@ -7,22 +7,27 @@ public class Password{
 
         boolean guessedIt = false;
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter a secret password(if it's personal don't worry it's definitely secret)---->");
+        System.out.print("Enter a secret password(if it's personal don't worry it's definitely secret)----> ");
         String userPassword = scan.nextLine();
-        System.out.println("Your password is :" + userPassword);
 
         String library = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvxyz!@#$%^&*()<>?:,./;'[]";
-        Random gotIt = new Random();
-        String cracker = library.substring(gotIt.nextInt() * library.length());
-        int total = 0;
-        int tries = 1; 
+        Random random = new Random(); 
+        String check = "initialize";
+        int tries = 0;
+        
 
-        if(cracker.equals(userPassword)){
-            guessedIt = true;
+        for(tries = 0;!check.equals(userPassword);tries++ ){
+            check = "";
+            for(int total = 0; total<userPassword.length() ; total++){
+
+                check += library.charAt(random.nextInt(library.length()));
+            }
         }
-        while(!guessedIt){
-            total= total+tries;
+        if(check.equals(userPassword)){
+            System.out.println("it took " + tries + " tries to guess it");
+            System.out.println("Your password is : " + userPassword);
         }
 
     }
 }
+    
