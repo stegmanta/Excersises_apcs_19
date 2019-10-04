@@ -7,7 +7,7 @@ public class Birthday{
         final double days = 365;
         double possible = 1;
 
-        System.out.println("How many people are there at the party:");
+        System.out.println("What is the amount of people at the party:");
         numPeople = scan.nextInt();
 
         for(int i = 1; i <= numPeople; i++) {
@@ -17,7 +17,7 @@ public class Birthday{
                 possible = possible * ((days - (i - 1)) / days);
             }
         }
-        System.out.println("The possible that nobody will have the same birthday is " + possible);
+        System.out.println("The possibility someone will have the same birthday " + possible);
 
         int x = 0;
         possible = 1;
