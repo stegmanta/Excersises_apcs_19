@@ -1,20 +1,21 @@
 public class MoreCone{
 
-        private double height = 4.0;
+        private double height;
         private double radius;
 
-        public double coneHeight(double height){
+        public ACone(double radius, double height){
+            this.height = height;
+            this.radius = radius;
+        }
 
-        this.height = 5.0;
+        public double coneHeight(double height){
         return this.height;
         }
 
 
 
 
-
-
         public double getHeight(){
-            return this.coneHeight();
+            return this.height;
         }
 }
