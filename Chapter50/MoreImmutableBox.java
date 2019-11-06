@@ -9,6 +9,12 @@ public class MoreImmutableBox{
         this.height = height;
         this.length = length;
     }
+     public MoreImmutableBox(){
+        this.width = width;
+        this.height = height;
+        this.length = length;
+
+    }
 
     // getters and setters
     public double GetWidth(){
