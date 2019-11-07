@@ -14,11 +14,11 @@ public class MorePantryTester{
     }
 
 
-    public int getOunces(){
+    public int GetOunces(){
         return this.ounces;
     }
 
-    public int getSelection(){
+    public int GetSelection(){
         return this.selection;
     }
 
