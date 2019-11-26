@@ -5,31 +5,31 @@ public class Odious{
         Scanner scan = new Scanner(System.in);
         boolean process = true;
         System.out.println("Type in a number too see if It's Odius Or Evil");
-        int Usernumber = scan.nextInt();
-        int saveUsernumber = Usernumber;
-        int Odiouscounter = 0;
+        int userNumber = scan.nextInt();
+        int saveuserNumber = userNumber;
+        int odiousCounter = 0;
         
 
         while(process){
 
-            int binary = Usernumber%2;
-            // System.out.println(binary);
+            int binary = userNumber%2;
+            // System.out.println(binary); check the binary pattern
             if(binary == 1){
-                Odiouscounter++;
+                odiousCounter++;
             }
-            int dividend = Usernumber/2;
+            int dividend = userNumber/2;
             // System.out.println(dividend);
 
             if (dividend == 0){
                 process = false;
             }
-            Usernumber = dividend;
+            userNumber = dividend;
         }
         System.out.println("------------");
-        if((Odiouscounter % 2) == 1){
-        System.out.println(saveUsernumber +" is an Odius number");
+        if((odiousCounter % 2) == 1){
+        System.out.println(saveuserNumber +" is an Odius number");
         }else{
-        System.out.println(saveUsernumber +" is a Evil number");
+        System.out.println(saveuserNumber +" is a Evil number");
         }
 
         
